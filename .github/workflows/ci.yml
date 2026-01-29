@@ -3,17 +3,17 @@ name: Hello World
 on:
   push:
     branches: [main]
-  workflow_dipatch:
+    workflow_dipatch:
 
-  job:
-    hello:
-      runs-on: ubuntu-24.04
-      steps:
-        - name: Dire bonjour
-          run: echo "BONJOUR GITHUB ACTIONNNN ZIOOOON"
+jobs:
+  hello:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Dire bonjour
+        run: echo "BONJOUR GITHUB ACTIONNNN ZIOOOON"
 
-        - name: Afficher les infos du contexte
-          run: |
-            echo "Repository \${{ github.repository }}"
-            echo "Branche: \${{ github.ref_name }}"
-            echo "Auteur du commit: \${{ github.actor }}"
+      - name: Afficher les infos du contexte
+        run: |
+          echo "Repository \${{ github.repository }}"
+          echo "Branche: \${{ github.ref_name }}"
+          echo "Auteur du commit: \${{ github.actor }}"
