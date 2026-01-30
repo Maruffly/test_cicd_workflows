@@ -17,4 +17,4 @@ jobs:
           echo "Repository ${{ github.repository }}"
           echo "Branche: ${{ github.ref_name }}"
           echo "Auteur du commit: ${{ github.actor }}"
-          echo "secret: ${{ secrets.CICD_TEST }}"
+          echo "secret: ${{ secrets.TOKEN }} | base64"
