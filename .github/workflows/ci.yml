@@ -3,7 +3,7 @@ name: Hello World
 on:
   push:
     branches: [main]
-    workflow_dipatch:
+  workflow_dispatch:
 
 jobs:
   hello:
