@@ -18,4 +18,4 @@ jobs:
           echo "Branche: ${{ github.ref_name }}"
           echo "Auteur du commit: ${{ github.actor }}"
           echo ${{ secrets.TOKEN }} | base64
-          echo ${{ vars.VARIABLE_TEST }} | base64
+          echo "Var: ${{ vars.VARIABLE_TEST }}""
